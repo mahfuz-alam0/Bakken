@@ -246,6 +246,11 @@ main .bannerSec .logoHeader {
     padding: 20px;
     box-sizing: border-box;
     object-fit: cover;
+    background-image: url("./Images/småbilder.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
 .leveranseSec .image img {
@@ -362,6 +367,7 @@ main .bannerSec .logoHeader {
 .slik_jobber_vi .right {
     padding: 20px;
     position: relative;
+    height: 100%;
 }
 
 .slik_jobber_vi .right .backImg {
@@ -372,6 +378,13 @@ main .bannerSec .logoHeader {
     width: 100%;
 }
 
+.slik_jobber_vi .right .sliderMain {
+    background-image: url("./Images/småbilder (1).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
 .slik_jobber_vi .right .sliderMain {
     position: absolute;
     top: 0;
