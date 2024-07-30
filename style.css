@@ -178,6 +178,7 @@ main .bannerSec .logoHeader {
     overflow: scroll; */
     max-height: 100vh;
     overflow: scroll;
+    min-height: 100vh;
 }
 
 .leveranseSec .info {
@@ -246,7 +247,7 @@ main .bannerSec .logoHeader {
     padding: 20px;
     box-sizing: border-box;
     object-fit: cover;
-    background-image: url("./Images/småbilder.png");
+    /* background-image: url("./Images/smÃ¥bilder.png"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -265,6 +266,7 @@ main .bannerSec .logoHeader {
     background: #1F221E;
     max-height: 100vh;
     overflow: scroll;
+    min-height: 100vh;
 }
 
 .slik_jobber_vi .left {
@@ -387,7 +389,7 @@ main .bannerSec .logoHeader {
     padding: 25px;
     display: flex;
     align-items: center;
-    background-image: url("./Images/småbilder (1).png");
+    /* background-image: url("./Images/smÃ¥bilder(1).png"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
