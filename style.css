@@ -21,7 +21,7 @@ body {
     scrollbar-width: none;
 }
 
-html,
+/* html,
 body {
     margin: 0;
     padding: 0;
@@ -41,14 +41,14 @@ body {
     position: relative;
     transition: transform 0.5s ease;
     overflow: auto;
-}
+} */
 
 /* html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
 } */
-/* 
+
 .headerSection,
 .hageplanSection,
 .leveranseSection,
@@ -83,7 +83,7 @@ body {
 
 .footerSection {
     z-index: 5;
-} */
+} 
 
 
 /* main {
@@ -246,6 +246,8 @@ main .bannerSec .logoHeader {
 
 .slik_jobber_vi {
     background: #1F221E;
+    max-height: 100vh;
+    overflow: scroll;
 }
 
 .slik_jobber_vi .left {
@@ -273,7 +275,7 @@ main .bannerSec .logoHeader {
     text-align: left;
     color: #979797;
     overflow: hidden;
-
+    gap: 40px;
 }
 
 .slik_jobber_vi .left .serials .nums::after {
@@ -540,7 +542,7 @@ footer {
     position: relative;
     top: 0;
     z-index: 5;
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 .footer {
