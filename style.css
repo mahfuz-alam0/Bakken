@@ -636,6 +636,7 @@ footer {
 
     .slik_jobber_vi .right .sliderMain {
         height: auto;
+        aspect-ratio: 1/1;
     }
 
     .hageplanSec .right,
@@ -643,7 +644,7 @@ footer {
         font-size: 18px;
     }
 
-    .leveranseSec .image{
+    .leveranseSec .image {
         aspect-ratio: 1/1;
     }
 
@@ -686,5 +687,9 @@ footer {
 
     .bothside {
         text-align: center;
+    }
+
+    .slik_jobber_vi .left {
+        justify-content: end;
     }
 }
