@@ -633,6 +633,10 @@ footer {
         flex-direction: column-reverse;
     }
 
+    .slik_jobber_vi .right .sliderMain{
+        height: auto;
+    }
+
     .hageplanSec .right,
     .hageplanSec .left {
         font-size: 18px;
