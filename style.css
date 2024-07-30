@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
-
 :root {
-    --font-family: "Duru Sans", sans-serif;
+    --font-family: "Degular", sans-serif;
 }
+
 
 * {
     margin: 0;
@@ -12,6 +11,15 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+@font-face {
+    font-family: 'Degular';
+    src: url('./font//Degular-Regular.otf') format('woff2'),
+        url('./font/Degular-Semibold.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
     margin: 0;
@@ -79,11 +87,15 @@ body {
 
 .beometSection {
     z-index: 4;
+    min-height: 100vh;
+    background: #101311;
+    /* display: flex; */
+    align-items: center;
 }
 
 .footerSection {
     z-index: 5;
-} 
+}
 
 
 /* main {
@@ -108,7 +120,7 @@ main .bannerSec {
 main .bannerSec .banner {
     width: 100%;
     max-height: 100vh;
-    /* height: 100%; */
+    height: 100%;
     object-fit: cover;
 }
 
@@ -542,7 +554,7 @@ footer {
     position: relative;
     top: 0;
     z-index: 5;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .footer {
@@ -605,6 +617,7 @@ footer {
 
     .hageplanSec {
         gap: 20px;
+        flex-direction: column-reverse;
     }
 
     .hageplanSec .right,
@@ -616,6 +629,19 @@ footer {
         font-size: 28px;
     }
 
+    .slik_jobber_vi .left .serials {
+        gap: 0;
+    }
+
+    .slik_jobber_vi .left .serials .nums {
+        flex-direction: column;
+    }
+
+    .slik_jobber_vi .left .serials .nums .Title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
     .beometSec .beometLeft .beometList ul li {
         font-size: 18px;
     }
@@ -625,18 +651,18 @@ footer {
         font-size: 18px;
     }
 
-    .footer{
+    .footer {
         grid-template-columns: 1fr;
         text-align: center;
         padding: 50px 30px;
     }
 
-    .bothside .right{
+    .bothside .right {
         text-align: center;
         justify-content: center;
     }
 
-    .bothside{
+    .bothside {
         text-align: center;
     }
 }
