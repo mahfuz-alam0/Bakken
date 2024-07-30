@@ -251,7 +251,6 @@ main .bannerSec .logoHeader {
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-    aspect-ratio: 1/1;
 }
 
 .leveranseSec .image img {
@@ -633,13 +632,17 @@ footer {
         flex-direction: column-reverse;
     }
 
-    .slik_jobber_vi .right .sliderMain{
+    .slik_jobber_vi .right .sliderMain {
         height: auto;
     }
 
     .hageplanSec .right,
     .hageplanSec .left {
         font-size: 18px;
+    }
+
+    .leveranseSec .image{
+        aspect-ratio: 1/1;
     }
 
     .leveranseSec .info .infoSubBox .subHeading {
