@@ -12,11 +12,27 @@
     display: none;
 }
 
+/*@font-face {*/
+/*    font-family: 'Degular';*/
+/*    src: url('./font//Degular-Regular.otf') format('woff2'),*/
+/*    url('./font/Degular-Semibold.otf') format('woff');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
+
 @font-face {
     font-family: 'Degular';
-    src: url('./font//Degular-Regular.otf') format('woff2'),
-        url('./font/Degular-Semibold.otf') format('woff');
+    src: url('./font/Degular-Regular.otf') format('woff2'),
+    url('./font/Degular-Regular.otf') format('woff');
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Degular';
+    src: url('./font/Degular-Semibold.otf') format('woff2'),
+    url('./font/Degular-Semibold.otf') format('woff');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -65,7 +81,7 @@ body {
     position: sticky;
     top: 0;
     max-height: 100vh;
-    overflow: auto;
+    /*overflow: auto;*/
     z-index: 0;
 }
 
@@ -77,12 +93,20 @@ body {
     z-index: 1;
 }
 
+.service-menu, .service-menu ul {
+    list-style: none !important;
+}
+
+.service-menu li a {
+    text-decoration: none;
+}
+
 .leveranseSection {
-    z-index: 2;
+    z-index: 3;
 }
 
 .slikJobberSection {
-    z-index: 3;
+    z-index: 2;
 }
 
 .beometSection {
@@ -90,6 +114,7 @@ body {
     min-height: 100vh;
     background: #101311;
     /* display: flex; */
+    max-height: none !important;
     align-items: center;
 }
 
@@ -408,8 +433,8 @@ main .bannerSec .logoHeader {
 .beometSec {
     background-color: #101311;
     color: #FFFFFF;
-    overflow: scroll;
-    max-height: 100vh;
+    /*overflow: scroll;*/
+/*     max-height: 100vh; */
 }
 
 .beometSec .beometLeft {
@@ -563,6 +588,66 @@ main .bannerSec .logoHeader {
     gap: 10px;
 }
 
+
+/* Gravity Forms Specific Styles */
+.gform_wrapper .gfield_label {
+    display: none !important; /* Hide labels if necessary */
+}
+
+.gform_wrapper .gfield input[type="text"],
+.gform_wrapper .gfield input[type="email"],
+.gform_wrapper .gfield input[type="date"],
+.gform_wrapper .gfield input[type="tel"],
+.gform_wrapper .gfield textarea {
+    box-sizing: border-box !important;
+    width: 100% !important;;
+    border: 2px solid #fff !important;
+    background: transparent !important;
+    padding: 24px 15px !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 31.85px !important;
+    letter-spacing: -0.02em !important;
+    text-align: left !important;
+    color: #979797 !important;
+}
+
+.gform_wrapper .gfield textarea {
+    resize: vertical !important;
+    min-height: 120px !important;
+}
+
+.gform_wrapper .gform_footer input[type="submit"] {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 31.85px !important;
+    letter-spacing: -0.02em !important;
+    text-align: center !important;
+    background-color: #A3A836 !important;
+    padding: 10px 15px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    color: #000 !important;
+}
+
+.gform_wrapper .gform_footer input[type="submit"]:hover {
+    background-color: #8BC34A !important;
+}
+
+.gform_wrapper .dubleClass .ginput_container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+}
+
+.gform-theme--foundation .gform_fields {
+    row-gap: 22px !important;
+}
+
+/* Gravity Forms Specific Styles end */
+
 footer {
     background-color: #CECFB3;
     position: relative;
@@ -620,7 +705,137 @@ footer {
 
 }
 
+/* Team section */
+.team-section {
+    min-height: 100vh; /* Ensure it takes the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0; /* Adjust as needed */
+    color: #fff;
+    background-color: #1F221E; /* Adjust background color as needed */
+    position: relative; /* Change to relative to allow proper scrolling */
+    z-index: 1;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.team-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    padding: 20px;
+    text-align: left;
+    border-radius: 8px;
+}
+
+.team-member-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.team-member-info {
+    margin-top: 20px;
+}
+
+.team-member-name {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 26.56px;
+}
+
+.team-member-position {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.team-member-email a {
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    display: block;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.team-member-bio {
+    color: #ccc;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* Only content section */
+.rich-text-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0; /* Adjust as needed */
+    color: #fff;
+    position: relative; /* Change to relative to allow proper scrolling */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    z-index: 1;
+}
+
+.bg-black {
+    background: #000;
+}
+
+.rich-text-section .container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px; /* Adjust as needed */
+}
+
+.page-content {
+    margin-bottom: 20px; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    min-width: 350px;
+}
+
+.page-main-content h2 {
+    font-size: 44px; /* Adjust as needed */
+    line-height: 36.52px; /* Adjust as needed */
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.page-main-content h3 {
+    font-size: 32px; /* Adjust as needed */
+    line-height: 26.56px; /* Adjust as needed */
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.page-main-content p {
+    font-size: 16px; /* Adjust as needed */
+    line-height: 22.4px; /* Adjust as needed */
+    font-weight: 400;
+}
+
+
 @media only screen and (max-width: 576px) {
+
 
     .leveranseSec .info,
     .hageplanSec,
@@ -629,9 +844,26 @@ footer {
         padding: 20px;
     }
 
+    /*disable sticky on mobile*/
+    .headerSection, .hageplanSection, .leveranseSection, .slikJobberSection, .beometSection{
+        position: relative !important;
+    }
+
+    .slik_jobber_vi, .leveranseSec {overflow: visible !important;}
+    .beometSec {max-height: none !important;}
+
+    .headerSection,
+    .hageplanSection, .bannerSec, .banner, .logoHeader {
+        max-height: 50vh !important;
+    }
+
     .hageplanSec {
         gap: 20px;
         flex-direction: column-reverse;
+    }
+
+    .service-menu {
+        list-style: none !important;
     }
 
     .slik_jobber_vi .right .sliderMain {
@@ -692,4 +924,9 @@ footer {
     .slik_jobber_vi .left {
         justify-content: end;
     }
+
+    /*.rich-text-section {*/
+    /*    min-height: auto !important;*/
+    /*    align-items: normal !important;*/
+    /*}*/
 }
